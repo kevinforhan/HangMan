@@ -48,12 +48,12 @@ function App() {
   return ( 
     <div>
       <Header />
-      <div className="game-container">
+      <div className="game-container"> 
         <Figure wrongLetters={wrongLetters} />
         <WrongLetters wrongLetters={wrongLetters} />
         <Word selectedWord={selectedWord} correctLetters={correctLetters} />
       </div>
-      <Popup />
+      <Popup correctLetters={correctLetters} wrongLetters={wrongLetters} selectedWord={selectedWord} setPlayable={setPlayable} />
         <Notification showNotification={showNotification} />
     </div>
   );
