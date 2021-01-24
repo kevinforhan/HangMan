@@ -12,15 +12,15 @@ const Figure = ({wrongLetters}) => {
         <line x1="20" y1="230" x2="100" y2="230" />
 
          {/* head */}
-        {errors > 0 && <circle cx="140" cy="70" r="20" class="figure-part" />}
+        {errors > 0 && <circle cx="140" cy="70" r="20" />}
         {/* body */}
-        {errors > 1 && <line x1="140" y1="90" x2="140" y2="150" class="figure-part" />}
+        {errors > 1 && <line x1="140" y1="90" x2="140" y2="150" />}
         {/* arms */}
-        {errors > 2 && <line x1="140" y1="120" x2="120" y2="100" class="figure-part" />}
-        {errors > 3 && <line x1="140" y1="120" x2="160" y2="100" class="figure-part" />}
+        {errors > 2 && <line x1="140" y1="120" x2="120" y2="100" />}
+        {errors > 3 && <line x1="140" y1="120" x2="160" y2="100" />}
         {/* legs */}
-        {errors > 4 && <line x1="140" y1="150" x2="120" y2="180" class="figure-part" />}
-        {errors > 5 && <line x1="140" y1="150" x2="160" y2="180" class="figure-part" />}
+        {errors > 4 && <line x1="140" y1="150" x2="120" y2="180" />}
+        {errors > 5 && <line x1="140" y1="150" x2="160" y2="180" />}
       </svg>
     )
 }
